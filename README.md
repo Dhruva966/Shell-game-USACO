@@ -1,5 +1,4 @@
 # USACO-solutions
-All my own USACO solutions
 
 The problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=891
 
