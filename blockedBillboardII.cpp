@@ -1,5 +1,5 @@
 // Source: https://usaco.guide/general/io
-
+//THE FOLLOWING CODE IS CLAPPED
 #include <bits/stdc++.h>
 using namespace std;
 
