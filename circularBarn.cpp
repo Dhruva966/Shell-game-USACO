@@ -10,42 +10,32 @@ using namespace std;
 #include <cmath>
 
 int main() {
-    // ifstream fin("cbarn.in");
-    // ofstream fout("cbarn.out");
+    ifstream fin("cbarn.in"); // Input stream from "cbarn.in" file.
+    ofstream fout("cbarn.out"); // Output stream to "cbarn.out" file.
 
-    int N, cows;
-    int maxcows = 0;
-    int minmove = 99999999;
-    int move = 0;
-    int index;
+    int N, cows, index; // Declare variables for the number of rooms and cows, and index
+    int maxcows = 0; // Initialize the maximum number of cows as 0.
+    int minmove = 99999999; // Initialize the minimum move distance as a large number.
+    int move = 0; // Initialize the current move distance as 0.
+    int index; // Declare an index variable.
 
-    cin >> N; // Read the number of rooms.
+    fin >> N; // Read the number of rooms from the input.
 
-    vector<int> roomsize(N);
+    vector<int> roomsize(N); // Create a vector to store room sizes.
 
     for (int u = 0; u < N; u++) {
-        cin >> roomsize[u]; // Read the number of cows in each room.
+        fin >> roomsize[u]; // Read the number of cows in each room.
         maxcows += roomsize[u]; // Calculate the total number of cows.
     }
 
     for (int i = 0; i < N; i++) {
-        cows = maxcows;
-        cows -= roomsize[i]; // Start with one room as the entrance and remove its cows.
+        cows = maxcows; // Set the current cows as the maximum cows.
+        cows -= roomsize[i]; // Remove the cows in the starting room.
 
-        for (int j = i; j < i + N; j++) {
-            if (i != j) {
-                move += cows; // Add the cows' movement to the total distance.
-                index = j % N; // Wrap around to the beginning if needed.
-                cows -= roomsize[index]; // Remove the cows in the next room.
-            } else {
-                continue; // Skip the current room (already counted).
-            }
-        }
-
-        if (i == N - 1) {
-            move -= roomsize[0]; // Subtract the cows in the first room if the entrance is the last room.
-        } else {
-            move -= roomsize[i + 1]; // Subtract the cows in the next room if not the last.
+        for (int j = i + 1; j < i + N; j++) {
+            move += cows; // Add the cows' movement to the total distance.
+            index = j % N; // Wrap around to the beginning if needed.
+            cows -= roomsize[index]; // Remove the cows in the next room.
         }
 
         minmove = min(move, minmove); // Keep track of the minimum total distance.
@@ -53,7 +43,7 @@ int main() {
         move = 0; // Reset the distance for the next starting room.
     }
 
-    cout << minmove; // Output the minimum total distance.
+    fout << minmove; // Write the minimum total distance to the output file.
 
-    return 0;
+    return 0; // Exit the program.
 }
