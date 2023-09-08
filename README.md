@@ -21,3 +21,5 @@ USACO- Mixing Milk problem link: http://www.usaco.org/index.php?page=viewproblem
 USACO- Measuring Traffic problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=917
 
 USACO- Circular Barn problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=616
+
+USACO- Censoring problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=526
