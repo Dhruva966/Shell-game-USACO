@@ -23,3 +23,5 @@ USACO- Measuring Traffic problem link: http://www.usaco.org/index.php?page=viewp
 USACO- Circular Barn problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=616
 
 USACO- Censoring problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=526
+
+USACO- Stuck in a Rut problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1061
