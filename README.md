@@ -25,3 +25,5 @@ USACO- Circular Barn problem link: http://www.usaco.org/index.php?page=viewprobl
 USACO- Censoring problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=526
 
 USACO- Stuck in a Rut problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1061
+
+USACO- Daisy Chains problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1060
