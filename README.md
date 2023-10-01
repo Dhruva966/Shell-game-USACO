@@ -1,4 +1,4 @@
-# USACO Link to problems (in order of solved, 5/27/23 onwards):
+# USACO Link to problems (in order of solved, 6/27/23 onwards):
 
 USACO- Square Pasture problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=663
 
