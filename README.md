@@ -29,3 +29,5 @@ USACO- Daisy Chains problem link: http://www.usaco.org/index.php?page=viewproble
 USACO- Milk Measurement problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=761
 
 USACO- Stuck in a Rut problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1061
+
+USACO- Bovine Genomics (Bronze) problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=736
