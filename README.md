@@ -31,3 +31,5 @@ USACO- Milk Measurement problem link: http://www.usaco.org/index.php?page=viewpr
 USACO- Stuck in a Rut problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1061
 
 USACO- Bovine Genomics (Bronze) problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=736
+
+USACO- Lifeguards problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=784
