@@ -33,3 +33,5 @@ USACO- Stuck in a Rut problem link: http://www.usaco.org/index.php?page=viewprob
 USACO- Bovine Genomics (Bronze) problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=736
 
 USACO- Lifeguards problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=784
+
+USACO- Contaminated Milk problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=569
