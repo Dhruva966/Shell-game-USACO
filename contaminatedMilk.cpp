@@ -44,7 +44,7 @@ int main() {
             for (int q = 0; q < D; q++) {
                 if (sick[k].first == vec[q].first) {
                     if (vec[q].second.first == b) {
-                        if (sick[k].second < vec[q].second.second) {
+                        if (sick[k].second <= vec[q].second.second) {
                             continue;
                         } else {
                             for (int g = 0; g < D; g++) {
