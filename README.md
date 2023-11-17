@@ -35,3 +35,5 @@ USACO- Bovine Genomics (Bronze) problem link: http://www.usaco.org/index.php?pag
 USACO- Lifeguards problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=784
 
 USACO- Contaminated Milk problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=569
+
+USACO- Guess the Animal problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=893
