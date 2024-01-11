@@ -46,5 +46,5 @@ USACO (First Contest Problem 1, solved in contest)- Candy Cane Feast problem lin
 
 USACO (First Contest Problem 2, solved in contest)- Cowntact Tracing 2 problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1348
 
-USACO (First Contest Problem 1, unsolved in contest)- Farmer John Actually Farms problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1349
+USACO (First Contest Problem 3, unsolved in contest)- Farmer John Actually Farms problem link: http://www.usaco.org/index.php?page=viewproblem2&cpid=1349
 
