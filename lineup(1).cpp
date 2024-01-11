@@ -10,80 +10,75 @@ using namespace std;
 #include <fstream>
 
 int main() {
+    // Open input and output files
+    ifstream fin("lineup.in");
+    ofstream fout("lineup.out");
 
-ifstream fin("lineup.in");
-ofstream fout("lineup.out");
+    // Declare variables
+    int N;
+    int r = 0;
+    string g, h;
 
-int N;
-int r = 0;
-string g, h;
-fin >> N;
+    // Input the number of constraints
+    fin >> N;
 
-vector<string> cows(8);
-vector<pair<string, string>> values(100);
+    // Declare vectors to store cow names and constraints
+    vector<string> cows(8);
+    vector<pair<string, string>> values(100);
 
-cows[0] = "Beatrice";
-cows[1] = "Belinda";
-cows[2] = "Bella";
-cows[3] = "Bessie";
-cows[4] = "Betsy";
-cows[5] = "Blue";
-cows[6] = "Buttercup";
-cows[7] = "Sue";
+    // Define the names of the initial cows
+    cows[0] = "Beatrice";
+    cows[1] = "Belinda";
+    cows[2] = "Bella";
+    cows[3] = "Bessie";
+    cows[4] = "Betsy";
+    cows[5] = "Blue";
+    cows[6] = "Buttercup";
+    cows[7] = "Sue";
 
-sort(cows.begin(), cows.end());
+    // Sort the cow names alphabetically
+    sort(cows.begin(), cows.end());
 
-for(int u = 0; u < N; u++){
+    // Input constraints and store them in the values vector
+    for (int u = 0; u < N; u++) {
+        fin >> g;
 
-	fin >> g;
+        for (int i = 0; i < 4; i++) {
+            string temp;
+            fin >> temp;
+        }
 
-    for (int i = 0; i < 4; i++) {
-        
-        string temp;
-        fin >> temp;
-
+        fin >> h;
+        values[u] = make_pair(g, h);
     }
 
-    fin >> h;  
-	
-    values[u] = make_pair(g, h);
+    // Find the alphabetically first ordering of cows that satisfies constraints
+    while (next_permutation(cows.begin(), cows.end())) {
+        for (int i = 0; i < N; i++) {
+            auto a = find(cows.begin(), cows.end(), values[i].first);
+            auto b = find(cows.begin(), cows.end(), values[i].second);
 
-}
+            // Check if the current ordering satisfies constraints
+            if (abs(a - b) != 1) {
+                r++;
+            }
+        }
 
-while(next_permutation(cows.begin(), cows.end())){
+        // If constraints are not satisfied, reset and continue with the next permutation
+        if (r != 0) {
+            r = 0;
+            continue;
+        } else {
+            // If constraints are satisfied, break out of the loop
+            break;
+        }
+    }
 
-	for(int i = 0; i < N; i++){
+    // Output the final ordering of cows to the output file
+    for (auto cow : cows) {
+        fout << cow << "\n";
+    }
 
-		auto a = find(cows.begin(), cows.end(), values[i].first);
-		auto b = find(cows.begin(), cows.end(), values[i].second);
-
-		if(abs(a - b) != 1){
-
-			r++;
-
-		}
-
-	}
-
-	if(r != 0){
-
-		r = 0;
-		continue;
-
-	} else {
-
-		break;
-
-	}
-
-}
-
-for(auto cow : cows){
-
-fout << cow << "\n";
-
-}
-
-return 0;
-
+    // Indicate successful program execution
+    return 0;
 }
